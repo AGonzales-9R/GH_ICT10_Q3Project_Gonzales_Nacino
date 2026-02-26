@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PYSCRIPT CDN -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+	
+    <!-- SETUP BOOTSTAP: LINK TO BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- PYSCRIPT LINK -->
+    <py-script src="main.py"></py-script>
+    <title>ICT 10 Skills Test: Account Creation</title>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="col-md-6">
+
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="poster.png" class="mx-auto d-block img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="blueposter.png" class="mx-auto d-block img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="redposter.png" class="mx-auto d-block img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="yellowposter.png" class="mx-auto d-block img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="greenposter.png" class="mx-auto d-block img-fluid">
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+           
+        <div class="col-md-6 mt-3 mb-3" style="padding: 120px;">
+            <img src="banner.png">
+            <br>
+                
+            <div id="req" class="req"></div>
+            <div id="continue" class="con"></div>
+
+            <br>
+            <input type="text" id="inputUN" class="form-control" placeholder="Username">
+            <br>
+            <input type="password" id="inputPass" class="form-control" placeholder="Password">
+            <br>
+                
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <input type="button" class="btn btn-large btn-dark" value="Sign in" py-click="signUP">
+            </div>
+            
+            <br>
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+				<button type="button" class="btn btn-large btn-dark" id="logIn" onclick="window.location.href='homepage.html';">Log in</button>	
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
