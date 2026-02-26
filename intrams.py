@@ -90,19 +90,20 @@ def players(e):
     elif fill == 'yes' and sec == 'tpz':
         display(f'''
         Here is your lineup of players:
-        Abad
-        Guinto
-        Mercado
-        Lozada
-        Dumagat
-        Castillo
-        Makalintal
-        Rosales
-        Tadiar
-        Evangelista''', target='listOfPlayers')
+        Espina
+        Enriquez
+        Abdullah
+        Arias
+        Garcia
+        Yao
+        Escobar
+        Choi
+        Ong
+        Cajucom''', target='listOfPlayers')
 
     else:
         display(f'Please answer the form above.', target='listOfPlayers')
+
 
 
 
