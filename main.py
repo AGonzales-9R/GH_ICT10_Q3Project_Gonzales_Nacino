@@ -2,8 +2,8 @@ from pyscript import document
 
 def create_account(event):
 
-    user = document.getElementById("username").value
-    pwd = document.getElementById("password").value
+    user = document.getElementById("inputUN").value
+    pwd = document.getElementById("inputPass").value
     message = document.getElementById("req")
 
    
@@ -38,4 +38,5 @@ def create_account(event):
         return
 
     message.innerHTML = "Account successfully created!"
+
 
