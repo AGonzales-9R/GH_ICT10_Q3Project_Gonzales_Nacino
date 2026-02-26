@@ -1,30 +1,40 @@
-# ICT 10 Skills Test: Account Creation
+from pyscript import document
 
-from pyscript import display, document
+def create_account(event):
 
-def signUP(e):
-    document.getElementById("req").innerHTML=" "
-    username = document.getElementById("inputUN").value
-    password = document.getElementById("inputPass").value
-    uservalue = len(username)
-    passL = list(password)
-    check = [password.isalpha(), password.isdigit()]
-    passvalue = len(password)
+    user = document.getElementById("username").value
+    pwd = document.getElementById("password").value
+    message = document.getElementById("output")
 
-    if uservalue >= 7:
-        if passvalue >= 10:
+   
+    message.innerHTML = ""
 
-            if password.isalpha() == True:
-                display(f"The password must contain at least one number. Try Again.", target="req")
-            
-            elif password.isdigit() == True:
-                display(f"The password must contain at least one letter. Try Again.", target="req")
-            
-            elif password.isdigit() == False and password.isalpha() == False:
-                display(f"Signing in...", target="req")
+  
+    if len(user) < 7:
+        message.innerHTML = "Username must be at least 7 characters."
+        return
 
-        else:
-            display(f"The password must contain at least ten characters. Try Again.", target="req")
-    
-    else:
-        display(f"The username must contain at least seven characters. Try Again.", target="req")
+  
+    if len(pwd) < 10:
+        message.innerHTML = "Password must be at least 10 characters long."
+        return
+
+    letter_found = False
+    number_found = False
+
+  
+    for ch in pwd:
+        if ch.isalpha():
+            letter_found = True
+        if ch.isdigit():
+            number_found = True
+
+    if letter_found == False:
+        message.innerHTML = "Password needs at least one letter."
+        return
+
+    if number_found == False:
+        message.innerHTML = "Password needs at least one number."
+        return
+
+    message.innerHTML = "Account successfully created!"
