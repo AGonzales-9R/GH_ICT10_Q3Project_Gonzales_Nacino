@@ -4,7 +4,7 @@ def create_account(event):
 
     user = document.getElementById("username").value
     pwd = document.getElementById("password").value
-    message = document.getElementById("output")
+    message = document.getElementById("req")
 
    
     message.innerHTML = ""
@@ -38,3 +38,4 @@ def create_account(event):
         return
 
     message.innerHTML = "Account successfully created!"
+
