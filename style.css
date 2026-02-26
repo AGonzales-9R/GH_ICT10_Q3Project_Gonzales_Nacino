@@ -1,8 +1,9 @@
 body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  margin: 0;
-  background-color: #e2ff3e;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
 }
 
 .navbar {
@@ -18,7 +19,44 @@ body {
     padding: 10px 20px;
     margin: 0 10px;
     display: inline-block;
+    border-radius: 5px;
 }
 
+.navbar a:hover {
+    background-color: darkorange;
 }
 
+.box {
+    background-color: #0d47a1;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.box select,
+.box input[type="radio"] {
+    margin: 5px;
+}
+
+.box button {
+    background-color: #f4511e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.box button:hover {
+    background-color: darkorange;
+}
+
+#output img {
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
