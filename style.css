@@ -2,7 +2,6 @@ body {
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
   margin: 0;
-   font-family: Arial, sans-serif;
   background-color: #e2ff3e;
 }
 
@@ -22,3 +21,4 @@ body {
 }
 
 }
+
