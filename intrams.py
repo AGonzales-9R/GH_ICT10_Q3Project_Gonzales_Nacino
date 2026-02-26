@@ -75,16 +75,16 @@ def players(e):
     elif fill == 'yes' and sec == 'saph':
         display(f'''
         Here is your lineup of players:
-        Bautista
-        Macapagal
+        Aseo
+        Hizon
+        Yao
         Mendoza
-        Lumauig
-        Tolentino
-        Magbanua
-        Salvador
-        Dagohoy
-        Aquino
-        Laxamana
+        Ngo
+        Ko
+        Intalan
+        Uy
+        Rivera
+        Lagman
         ''', target='listOfPlayers')
 
     elif fill == 'yes' and sec == 'tpz':
@@ -103,5 +103,6 @@ def players(e):
 
     else:
         display(f'Please answer the form above.', target='listOfPlayers')
+
 
 
