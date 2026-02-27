@@ -42,67 +42,30 @@ def players(e):
     fill = document.querySelector('input[name="form"]:checked').value
     gr = document.getElementById('gr').value
     sec = document.getElementById('sec').value
+    e = ['Dellejero', 'Abayon', 'Dela Cruz', 'Mamauag', 'De Mata', 'Banaag', 'Coeli', 'Lozano','Fukuda', 'Zaragoza']
+    r = ['Nardo', 'Dimaculangan', 'Reyes', 'Cabatingan', 'Galang', 'Canete', 'Jamet', 'Yao', 'Villegas', 'Sangreo']
+    s =  ['Aseo', 'Hizon', 'Ngo', 'Ko', 'Intalan', 'Lagman', 'Mendoza', 'Uy','Rivera', 'Yao']
+    t = ['Yao', 'Choi', 'Rufo', 'Escobar', 'Ong', 'Arias', 'Abdullah', 'Cajucom','Espina', 'Garcia']
 
     if fill == 'yes' and sec == 'eme':
-        display(f'''
-        Here is your lineup of players:
-        Dellejero
-        Abayon
-        Dela Cruz
-        Mamauag
-        De Mata
-        Banaag
-        Coeli
-        Zaragoza
-        Lozano
-        Fukuda
-        ''', target='listOfPlayers')
+        for i in e:
+            display(i, target="listOfPlayers")
 
     elif fill == 'yes' and sec == 'ruby':
-        display(f'''
-        Here is your lineup of players:
-        Nardo 
-        Dimaculangan 
-        Reyes 
-        Cabatingan 
-        Sangreo
-        Canete 
-        Galang 
-        Jamet 
-        Yao 
-        Villegas''', target='listOfPlayers')
+        for i in r:
+            display(i, target="listOfPlayers")
 
     elif fill == 'yes' and sec == 'saph':
-        display(f'''
-        Here is your lineup of players:
-        Aseo
-        Hizon
-        Yao
-        Mendoza
-        Ngo
-        Ko
-        Intalan
-        Uy
-        Rivera
-        Lagman
-        ''', target='listOfPlayers')
+        for i in s:
+            display(i, target="listOfPlayers")
 
     elif fill == 'yes' and sec == 'tpz':
-        display(f'''
-        Here is your lineup of players:
-        Espina
-        Enriquez
-        Abdullah
-        Arias
-        Garcia
-        Yao
-        Escobar
-        Choi
-        Ong
-        Cajucom''', target='listOfPlayers')
+        for i in t:
+            display(i, target="listOfPlayers")
 
     else:
         display(f'Please answer the form above.', target='listOfPlayers')
+
 
 
 
