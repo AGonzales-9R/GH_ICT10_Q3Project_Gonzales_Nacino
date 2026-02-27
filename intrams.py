@@ -46,16 +46,16 @@ def players(e):
     if fill == 'yes' and sec == 'eme':
         display(f'''
         Here is your lineup of players:
-        Soriano
-        Sumulong
-        Pascual
-        Guevarra
-        Dalisay
-        Quinto
-        Maliksi
-        Bermudez
-        Mangubat
-        Espiritu
+        Dellejero
+        Abayon
+        Dela Cruz
+        Mamauag
+        De Mata
+        Banaag
+        Coeli
+        Zaragoza
+        Lozano
+        Fukuda
         ''', target='listOfPlayers')
 
     elif fill == 'yes' and sec == 'ruby':
@@ -103,6 +103,7 @@ def players(e):
 
     else:
         display(f'Please answer the form above.', target='listOfPlayers')
+
 
 
 
